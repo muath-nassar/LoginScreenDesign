@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#25ae90">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true">
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Email"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Password"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="15dp"
+            android:layout_marginTop="25dp"
+            android:text="Login"
+           android:textStyle="bold"
+            android:backgroundTint="#edeef2"
+            android:textColor="#25ae90"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_a_member"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="0dp"
+                android:text="Sign up now"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
